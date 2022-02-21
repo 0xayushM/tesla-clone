@@ -12,13 +12,6 @@ function Home() {
                 rgtbtn = "Existing Inventory"
             />
             <Section
-                title = "Model Y"
-                description = "Order Online for Touchless Delivery"
-                bgimage = "model-y.jpg"
-                leftbtn = "Custom Order"
-                rgtbtn = "Existing Inventory"
-            />
-            <Section
                 title = "Model 3"
                 description = "Order Online for Touchless Delivery"
                 bgimage = "model-3.jpg"
@@ -29,6 +22,13 @@ function Home() {
                 title = "Model X"
                 description = "Order Online for Touchless Delivery"
                 bgimage = "model-x.jpg"
+                leftbtn = "Custom Order"
+                rgtbtn = "Existing Inventory"
+            />
+            <Section
+                title = "Model Y"
+                description = "Order Online for Touchless Delivery"
+                bgimage = "model-y.jpg"
                 leftbtn = "Custom Order"
                 rgtbtn = "Existing Inventory"
             />

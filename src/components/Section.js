@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 
 function Section({ title, description, bgimage, leftbtn, rgtbtn }) {
+  
   return (
     <Wrap bgimg={bgimage}>
       <Fade bottom>
@@ -18,7 +19,7 @@ function Section({ title, description, bgimage, leftbtn, rgtbtn }) {
           {rgtbtn && <RightButton>{rgtbtn}</RightButton>}
         </ButtonGroup>
         </Fade>
-        <DownArrow src="/images/down-arrow.svg" />
+        <DownArrow onClick ="" src="/images/down-arrow.svg" />
       </Buttons>
     </Wrap>
   );
@@ -33,7 +34,7 @@ const Wrap = styled.div`
   background-repeat: no-repeat;
   background-image: ${(props) => `url("/images/${props.bgimg}")`};
   display: flex;
-  scroll-behavior: smooth;
+  scroll-behavior: calc();
   flex-direction: column;
   justify-content: space-between; //vertical alignment
   align-items: center; //horizontal alignment
@@ -76,6 +77,8 @@ const RightButton = styled(LeftButton)`
 const DownArrow = styled.img`
   height: 40px;
   overflow-x: hidden;
+  cursor:pointer;
+  
   animation: animateDown infinite 1.5s;
 `;
 
